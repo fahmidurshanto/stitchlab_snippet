@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippets" inherit_id="website.snippets" name="StitchLab Snippets">
+        <xpath expr="//*[@id='default_snippets']" position="before">
+            <div id="stitchlab_snippets_category" class="o_panel">
+                <div class="o_panel_header">StitchLab</div>
+                <div class="o_panel_body">
+                    <t t-snippet="stitchlab_snippets.s_stitchlab_landing_page" t-thumbnail="/stitchlab_snippets/static/src/img/snippet_thumbnail.svg">
+                        <keywords>stitchlab, landing, full page, tailoring</keywords>
+                    </t>
+                    <t t-snippet="stitchlab_snippets.s_stitchlab_hero" t-thumbnail="/stitchlab_snippets/static/src/img/snippet_thumbnail.svg">
+                        <keywords>stitchlab, hero, showroom, tailoring</keywords>
+                    </t>
+                    <t t-snippet="stitchlab_snippets.s_stitchlab_stacked_cards" t-thumbnail="/stitchlab_snippets/static/src/img/snippet_thumbnail.svg">
+                        <keywords>stitchlab, cards, process, outfit</keywords>
+                    </t>
+                    <t t-snippet="stitchlab_snippets.s_stitchlab_features_hub" t-thumbnail="/stitchlab_snippets/static/src/img/snippet_thumbnail.svg">
+                        <keywords>stitchlab, features, platform, measurements</keywords>
+                    </t>
+                    <t t-snippet="stitchlab_snippets.s_stitchlab_reviews" t-thumbnail="/stitchlab_snippets/static/src/img/snippet_thumbnail.svg">
+                        <keywords>stitchlab, reviews, testimonials, carousel</keywords>
+                    </t>
+                    <t t-snippet="stitchlab_snippets.s_stitchlab_operations_hub" t-thumbnail="/stitchlab_snippets/static/src/img/snippet_thumbnail.svg">
+                        <keywords>stitchlab, experience, operations, service</keywords>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

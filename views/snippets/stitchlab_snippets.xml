@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_stitchlab_hero" name="StitchLab Hero">
+        <section class="s_stitchlab_hero stitchlab_dark_section" data-snippet="s_stitchlab_hero" data-name="StitchLab Hero">
+            <div class="sl_hero_container">
+                <div class="sl_hero_content">
+                    <span class="sl_badge">Showroom Management</span>
+                    <h1>Showroom Orders <br/>Without the <em>Measurement Chaos</em></h1>
+                    <p class="sl_hero_description">
+                        StitchLab gives tailoring showrooms one powerful tablet workflow to capture orders, precise measurements, detailed instructions, dynamic pricing, and real-time cloth tracking from a single screen.
+                    </p>
+                    <div class="sl_hero_actions">
+                        <a href="/contactus" class="sl_btn sl_btn_primary">Book a Demo</a>
+                        <a href="/contactus" class="sl_btn sl_btn_outline">Explore Features</a>
+                    </div>
+                </div>
+                <div class="sl_hero_visual">
+                    <div class="sl_tablet_mock">
+                        <div class="sl_tablet_screen">
+                            <div class="sl_measure_anim">
+                                <div class="sl_m_line"><div class="sl_dot"/></div>
+                                <div class="sl_m_line"><div class="sl_dot"/></div>
+                                <div class="sl_m_line"><div class="sl_dot"/></div>
+                            </div>
+                            <div class="sl_tablet_label">
+                                <span>Measurements</span> - Instructions - Pricing - Tracking
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_stitchlab_stacked_cards" name="StitchLab Process Cards">
+        <section class="s_stitchlab_stacked_cards stitchlab_dark_section" data-snippet="s_stitchlab_stacked_cards" data-name="StitchLab Process Cards">
+            <div class="sl_section_intro">
+                <h2>Your Perfect Outfit, Made Simple</h2>
+            </div>
+            <div class="sl_card_container">
+                <article class="sl_process_card sl_card_1">
+                    <div class="sl_card_info">
+                        <h3>01. Find Your Style</h3>
+                        <p>Walk into the showroom and explore a world of possibilities. From chic contemporary tops to graceful Panjabi-style kurtis and flowing salwar suits, your dream design starts with a single tap.</p>
+                    </div>
+                    <div class="sl_card_image_wrapper">
+                        <img src="https://i.ibb.co.com/0pGdnPZg/Collection-display-of-South-Asian-fashion-outfits-trendy-modern-tops-with-contemporary-designs-cla.webp?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Ladies Kurtis and Tops Boutique Display" loading="lazy"/>
+                    </div>
+                </article>
+                <article class="sl_process_card sl_card_2">
+                    <div class="sl_card_info">
+                        <h3>02. Make It Uniquely Yours</h3>
+                        <p>Handpick from luxurious linens, soft cottons, and rich blends. Then shape every detail, from necklines and sleeves to buttons and trims that reflect your personality.</p>
+                    </div>
+                    <div class="sl_card_image_wrapper">
+                        <img src="https://i.ibb.co.com/JwnvzLz5/fashion-garments.png?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Traditional South Asian Block Print Cotton Fabrics" loading="lazy"/>
+                    </div>
+                </article>
+                <article class="sl_process_card sl_card_3">
+                    <div class="sl_card_info">
+                        <h3>03. Measured Once, Perfect Always</h3>
+                        <p>Your exact fit lives with us forever. Shoulders, sleeves, chest, and length are digitally stored so every future order drapes flawlessly.</p>
+                    </div>
+                    <div class="sl_card_image_wrapper">
+                        <img src="https://images.unsplash.com/photo-1509319117193-57bab727e09d?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Tailor cutting and measuring fabric" loading="lazy"/>
+                    </div>
+                </article>
+                <article class="sl_process_card sl_card_4">
+                    <div class="sl_card_info">
+                        <h3>04. See It Before It's Sewn</h3>
+                        <p>Review your complete design on screen before a single stitch is made. Approve lace borders, pairings, pocket styles, and every important detail with confidence.</p>
+                    </div>
+                    <div class="sl_card_image_wrapper">
+                        <img src="https://i.ibb.co.com/p6hTtgcB/Custom-Kurti-design-details-showcase-lace-borders-on-hemlines-decorative-top-trims-and-neckline-em.webp?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Detailed neck embroidery work" loading="lazy"/>
+                    </div>
+                </article>
+                <article class="sl_process_card sl_card_5">
+                    <div class="sl_card_info">
+                        <h3>05. Watch It Come to Life</h3>
+                        <p>Your outfit gets a smart tracking tag. Follow its journey from cutting table to stitching line to final dispatch, and know exactly when it is ready.</p>
+                    </div>
+                    <div class="sl_card_image_wrapper">
+                        <img src="https://i.ibb.co.com/DgjB6bLk/Smart-QR-code-and-barcode-tracking-system-for-South-Asian-fashion-garments-Tracking-stickers-attach.webp?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Modern tailoring workshop tracking labels" loading="lazy"/>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_stitchlab_features_hub" name="StitchLab Features Hub">
+        <section class="s_stitchlab_features_hub stitchlab_dark_section" data-snippet="s_stitchlab_features_hub" data-name="StitchLab Features Hub">
+            <div class="sl_section_header">
+                <span class="sl_badge">Platform Features</span>
+                <h2>Smarter Tailoring, <em>Powered by StitchLab</em></h2>
+            </div>
+            <div class="sl_hub_relative_container">
+                <svg xmlns="http://www.w3.org/2000/svg" class="sl_svg_pipelines" aria-hidden="true">
+                    <path class="sl_pipeline" data-pipe="1"/>
+                    <path class="sl_pipeline" data-pipe="2"/>
+                    <path class="sl_pipeline" data-pipe="3"/>
+                    <path class="sl_pipeline" data-pipe="4"/>
+                    <path class="sl_pipeline" data-pipe="5"/>
+                    <path class="sl_pipeline" data-pipe="8"/>
+                    <circle class="sl_pulse_dot"><animateMotion dur="2.5s" repeatCount="indefinite" data-anim="1"/></circle>
+                    <circle class="sl_pulse_dot"><animateMotion dur="3.2s" repeatCount="indefinite" data-anim="2"/></circle>
+                    <circle class="sl_pulse_dot"><animateMotion dur="2.8s" repeatCount="indefinite" data-anim="3"/></circle>
+                    <circle class="sl_pulse_dot"><animateMotion dur="3s" repeatCount="indefinite" data-anim="4"/></circle>
+                    <circle class="sl_pulse_dot"><animateMotion dur="2.4s" repeatCount="indefinite" data-anim="5"/></circle>
+                    <circle class="sl_pulse_dot"><animateMotion dur="3s" repeatCount="indefinite" data-anim="8"/></circle>
+                </svg>
+                <div class="sl_hub_wrapper">
+                    <div class="sl_column_left">
+                        <div class="sl_feature_card" data-feature="1">
+                            <h3>Smart Measurements</h3>
+                            <p>Log accurate body dimensions, structural configurations, and customized sizing rules instantly.</p>
+                            <div class="sl_visual_box sl_box_measurements"><div class="sl_tape_wrap"><div class="sl_tape_line"/><div class="sl_tape_marker"/></div></div>
+                        </div>
+                        <div class="sl_feature_card" data-feature="2">
+                            <h3>Voice Assistant</h3>
+                            <p>Dictate custom specifications, edge trimmings, or dynamic modification logs hands-free.</p>
+                            <div class="sl_visual_box sl_box_voice"><div class="sl_voice_avatar">SL</div><div class="sl_mic_icon"><i/><i/><i/><i/><i/></div></div>
+                        </div>
+                        <div class="sl_feature_card" data-feature="3">
+                            <h3>Add-ons &amp; Components</h3>
+                            <p>Inject premium configurations like custom lace variants, layout modules, and button sets.</p>
+                            <div class="sl_visual_box sl_box_components"><span>Lace Trims</span><span>Buttons</span></div>
+                        </div>
+                    </div>
+                    <div class="sl_center_core">
+                        <div class="sl_core_outer_glow" data-center-node="1">
+                            <img src="https://i.ibb.co.com/bM1L8TW7/image.png" alt="StitchLab AI core" class="sl_core_node_image" loading="lazy"/>
+                        </div>
+                    </div>
+                    <div class="sl_column_right">
+                        <div class="sl_feature_card" data-feature="4">
+                            <h3>Multi-Media Instructions</h3>
+                            <p>Provide exact construction blueprints via production video snippets, voice markers, or fabric layout imagery.</p>
+                            <div class="sl_visual_box sl_box_instructions"><span>Video</span><span>Audio</span></div>
+                        </div>
+                        <div class="sl_feature_card" data-feature="5">
+                            <h3>QR Tracking &amp; Logistics</h3>
+                            <p>Scan assigned labels to verify physical location status on machine lines or cutting boards.</p>
+                            <div class="sl_visual_box sl_box_qr"><div class="sl_qr_mock"><div class="sl_qr_laser_line"/></div></div>
+                        </div>
+                        <div class="sl_feature_card" data-feature="8">
+                            <h3>Sample-Based Tailoring</h3>
+                            <p>Replicate exact cuts and styling details using physical sample clothes provided by customers.</p>
+                            <div class="sl_visual_box sl_box_sample"><span>Sample Cloth</span><b>-></b><span>New Production</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_stitchlab_reviews" name="StitchLab Reviews">
+        <section class="s_stitchlab_reviews" data-snippet="s_stitchlab_reviews" data-name="StitchLab Reviews">
+            <div class="sl_section_header">
+                <span class="sl_badge">Customer Love</span>
+                <h2>What Our <em>Happy Clients Say</em></h2>
+            </div>
+            <div class="sl_carousel_wrapper">
+                <button class="sl_carousel_arrow sl_prev" type="button" aria-label="Previous review">‹</button>
+                <div class="sl_carousel_container">
+                    <div class="sl_carousel_track">
+                        <article class="sl_review_slide">
+                            <div class="sl_reviewer_left">
+                                <img src="https://i.ibb.co.com/8wwrsc5/avater-1.webp?img=47" alt="Anika Rahman" class="sl_reviewer_avatar_large" loading="lazy"/>
+                                <div class="sl_reviewer_name_large">Anika Rahman</div>
+                                <div class="sl_reviewer_role_large">Bridal Customer</div>
+                            </div>
+                            <div class="sl_review_right">
+                                <div class="sl_stars_large">*****</div>
+                                <p class="sl_review_text_large">StitchLab made ordering my wedding outfit completely stress-free. I chose my fabric, customized the neck design, and they got my measurements right the first time.</p>
+                            </div>
+                        </article>
+                        <article class="sl_review_slide">
+                            <div class="sl_reviewer_left">
+                                <img src="https://i.ibb.co.com/RTXr4VRz/avater-2.webp?img=36" alt="Farzana Haque" class="sl_reviewer_avatar_large" loading="lazy"/>
+                                <div class="sl_reviewer_name_large">Farzana Haque</div>
+                                <div class="sl_reviewer_role_large">Regular Client</div>
+                            </div>
+                            <div class="sl_review_right">
+                                <div class="sl_stars_large">*****</div>
+                                <p class="sl_review_text_large">StitchLab remembered my measurements from my first visit. Now I just walk in, pick a style, and it is stitched perfectly.</p>
+                            </div>
+                        </article>
+                        <article class="sl_review_slide">
+                            <div class="sl_reviewer_left">
+                                <img src="https://i.ibb.co.com/JRktKLNw/avater-3.webp?img=5" alt="Nusrat Jahan" class="sl_reviewer_avatar_large" loading="lazy"/>
+                                <div class="sl_reviewer_name_large">Nusrat Jahan</div>
+                                <div class="sl_reviewer_role_large">Fashion Enthusiast</div>
+                            </div>
+                            <div class="sl_review_right">
+                                <div class="sl_stars_large">*****</div>
+                                <p class="sl_review_text_large">The tablet interface at the showroom was so easy. I showed them a sample picture, and they replicated the exact embroidery pattern.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <button class="sl_carousel_arrow sl_next" type="button" aria-label="Next review">›</button>
+            </div>
+            <div class="sl_carousel_dots" aria-label="Review navigation"/>
+        </section>
+    </template>
+
+    <template id="s_stitchlab_operations_hub" name="StitchLab Experience">
+        <section class="s_stitchlab_operations_hub stitchlab_dark_section" data-snippet="s_stitchlab_operations_hub" data-name="StitchLab Experience">
+            <div class="sl_bg_shimmer"/>
+            <div class="sl_ops_glow"/>
+            <div class="sl_section_header">
+                <span class="sl_badge">Your Experience</span>
+                <h2>Every Detail, <em>Tailored Around You</em></h2>
+            </div>
+            <div class="sl_ops_grid">
+                <article class="sl_op_card"><div class="sl_op_icon">!</div><h3 class="sl_op_title">Priority Handling</h3><p class="sl_op_desc">Need it sooner? Your order is fast-tracked for special occasions without compromising quality.</p></article>
+                <article class="sl_op_card"><div class="sl_op_icon">D</div><h3 class="sl_op_title">Guaranteed Deadlines</h3><p class="sl_op_desc">We plan every order around your promised delivery date, so your outfit arrives when expected.</p></article>
+                <article class="sl_op_card"><div class="sl_op_icon">E</div><h3 class="sl_op_title">Expert Craftsmanship</h3><p class="sl_op_desc">Your garment is entrusted to skilled cutting masters for precision on every stitch.</p></article>
+                <article class="sl_op_card"><div class="sl_op_icon">C</div><h3 class="sl_op_title">Direct Updates</h3><p class="sl_op_desc">Chat anytime about your order and get progress updates without leaving home.</p></article>
+                <article class="sl_op_card"><div class="sl_op_icon">F</div><h3 class="sl_op_title">Flexible Changes</h3><p class="sl_op_desc">Add another kurti or split a set while keeping the order flow hassle-free.</p></article>
+                <article class="sl_op_card"><div class="sl_op_icon">P</div><h3 class="sl_op_title">Seamless Production</h3><p class="sl_op_desc">Your design flows from tablet to workshop floor with fewer manual mix-ups.</p></article>
+            </div>
+        </section>
+    </template>
+
+    <template id="s_stitchlab_landing_page" name="StitchLab Full Landing Page">
+        <div class="s_stitchlab_landing_page" data-snippet="s_stitchlab_landing_page" data-name="StitchLab Full Landing Page">
+            <t t-call="stitchlab_snippets.s_stitchlab_hero"/>
+            <t t-call="stitchlab_snippets.s_stitchlab_stacked_cards"/>
+            <t t-call="stitchlab_snippets.s_stitchlab_features_hub"/>
+            <t t-call="stitchlab_snippets.s_stitchlab_reviews"/>
+            <t t-call="stitchlab_snippets.s_stitchlab_operations_hub"/>
+        </div>
+    </template>
+</odoo>
