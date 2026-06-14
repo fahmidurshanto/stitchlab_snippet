@@ -136,9 +136,67 @@ function initReviewCarousels(root = document) {
     });
 }
 
+function initLineArtAnimation(root = document) {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const canvas = entry.target.querySelector('.sl_la_canvas');
+                if (canvas) {
+                    canvas.classList.add('is-visible');
+                }
+            }
+        });
+    }, observerOptions);
+
+    root.querySelectorAll('.s_stitchlab_line_art').forEach((section) => {
+        if (section.dataset.slLineArtReady) {
+            return;
+        }
+        section.dataset.slLineArtReady = "1";
+        observer.observe(section);
+
+        const tabs = section.querySelectorAll('.sl_la_tab');
+        const svgs = section.querySelectorAll('.sl_la_svg');
+        const canvas = section.querySelector('.sl_la_canvas');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = tab.dataset.target;
+                
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                svgs.forEach(svg => {
+                    svg.style.display = 'none';
+                    svg.classList.remove('active');
+                });
+                
+                const activeSvg = section.querySelector(`.sl_la_svg[data-garment="${target}"]`);
+                if (activeSvg) {
+                    activeSvg.style.display = 'block';
+                    activeSvg.classList.add('active');
+                }
+
+                if (canvas) {
+                    canvas.classList.remove('is-visible');
+                    void canvas.offsetWidth; // Force reflow
+                    canvas.classList.add('is-visible');
+                }
+            });
+        });
+    });
+}
+
 function initStitchLabSnippets(root = document) {
     initFeatureHubs(root);
     initReviewCarousels(root);
+    initLineArtAnimation(root);
 }
 
 if (document.readyState === "loading") {

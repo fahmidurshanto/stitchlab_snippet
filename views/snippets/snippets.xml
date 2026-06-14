@@ -17,6 +17,9 @@
                     <t t-snippet="stitchlab_snippets.s_stitchlab_features_hub" t-thumbnail="/stitchlab_snippets/static/src/img/snippet_thumbnail.svg">
                         <keywords>stitchlab, features, platform, measurements</keywords>
                     </t>
+                    <t t-snippet="stitchlab_snippets.s_stitchlab_line_art" t-thumbnail="/stitchlab_snippets/static/src/img/snippet_thumbnail.svg">
+                        <keywords>stitchlab, line art, blueprint, precision, measurements</keywords>
+                    </t>
                     <t t-snippet="stitchlab_snippets.s_stitchlab_reviews" t-thumbnail="/stitchlab_snippets/static/src/img/snippet_thumbnail.svg">
                         <keywords>stitchlab, reviews, testimonials, carousel</keywords>
                     </t>
