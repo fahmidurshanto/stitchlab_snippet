@@ -50,6 +50,7 @@
     justify-content: center;
     min-height: 90vh;
     padding: 80px 20px 60px;
+    overflow: hidden;
 
     &::before {
         animation: sl_glow_scale 4s ease-in-out infinite;
@@ -299,6 +300,7 @@
 
 .s_stitchlab_features_hub {
     padding: 60px 20px;
+    overflow: hidden;
 
     .sl_hub_relative_container {
         margin: 0 auto;
@@ -667,6 +669,7 @@
 
 .s_stitchlab_operations_hub {
     padding: 60px 5%;
+    overflow: hidden;
 
     .sl_bg_shimmer,
     .sl_ops_glow {
@@ -759,8 +762,9 @@
     }
 }
 
-.s_stitchlab_line_art {
+.s_stitchlab_line_art, .s_stitchlab_line_art_cards {
     padding: 80px 20px;
+    overflow: hidden;
     
     .sl_la_container {
         align-items: center;

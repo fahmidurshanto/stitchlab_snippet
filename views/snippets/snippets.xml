@@ -14,6 +14,9 @@
                     <t t-snippet="stitchlab_snippets.s_stitchlab_stacked_cards" t-thumbnail="/stitchlab_snippets/static/src/img/snippet_thumbnail.svg">
                         <keywords>stitchlab, cards, process, outfit</keywords>
                     </t>
+                    <t t-snippet="stitchlab_snippets.s_stitchlab_line_art_cards" t-thumbnail="/stitchlab_snippets/static/src/img/snippet_thumbnail.svg">
+                        <keywords>stitchlab, line art cards, blueprint, precision, garments</keywords>
+                    </t>
                     <t t-snippet="stitchlab_snippets.s_stitchlab_features_hub" t-thumbnail="/stitchlab_snippets/static/src/img/snippet_thumbnail.svg">
                         <keywords>stitchlab, features, platform, measurements</keywords>
                     </t>

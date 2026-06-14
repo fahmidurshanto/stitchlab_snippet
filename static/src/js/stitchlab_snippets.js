@@ -146,7 +146,7 @@ function initLineArtAnimation(root = document) {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const canvas = entry.target.querySelector('.sl_la_canvas');
+                const canvas = entry.target.querySelector('.sl_la_canvas') || (entry.target.classList.contains('sl_la_canvas') ? entry.target : null);
                 if (canvas) {
                     canvas.classList.add('is-visible');
                 }
@@ -154,6 +154,7 @@ function initLineArtAnimation(root = document) {
         });
     }, observerOptions);
 
+    // Setup for tabbed line art section
     root.querySelectorAll('.s_stitchlab_line_art').forEach((section) => {
         if (section.dataset.slLineArtReady) {
             return;
@@ -190,6 +191,15 @@ function initLineArtAnimation(root = document) {
                 }
             });
         });
+    });
+
+    // Setup for stacked line art cards
+    root.querySelectorAll('.s_stitchlab_line_art_cards .sl_process_card').forEach((card) => {
+        if (card.dataset.slLineArtReady) {
+            return;
+        }
+        card.dataset.slLineArtReady = "1";
+        observer.observe(card);
     });
 }
 
