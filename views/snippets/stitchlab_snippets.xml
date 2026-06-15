@@ -90,104 +90,249 @@
     <template id="s_stitchlab_line_art_cards" name="StitchLab Line Art Cards">
         <section class="s_stitchlab_line_art_cards s_stitchlab_stacked_cards stitchlab_dark_section" data-snippet="s_stitchlab_line_art_cards" data-name="StitchLab Line Art Cards">
             <div class="sl_section_intro">
-                <h2>Digital Blueprints, Built for You</h2>
+                <h2>What Makes StitchLab <em>Different</em></h2>
             </div>
             <div class="sl_card_container">
-                <!-- Card 1: Kurti -->
+
+                <!-- Card 1: Perfect Measurements -->
                 <article class="sl_process_card sl_card_1">
                     <div class="sl_card_info">
-                        <h3>01. Kurti Blueprint</h3>
-                        <p>Perfect drape requires precise shoulder, chest, waist, and length measurements. We capture every contour.</p>
+                        <h3>01. Perfect Measurement Collection</h3>
+                        <p>Every fit starts with precision. We take and record each body measurement with care — shoulder, chest, waist, length, and more — so nothing is guessed and nothing is missed.</p>
                     </div>
                     <div class="sl_card_image_wrapper sl_la_canvas">
-                        <svg class="sl_la_svg active" data-garment="kurti" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="sl_la_card_svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
                             <g class="sl_la_grid">
                                 <line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="300" x2="400" y2="300" /><line x1="0" y1="400" x2="400" y2="400" />
                                 <line x1="100" y1="0" x2="100" y2="500" /><line x1="200" y1="0" x2="200" y2="500" /><line x1="300" y1="0" x2="300" y2="500" />
                             </g>
-                            <path class="sl_la_path sl_la_main" d="M 150 50 C 180 50, 220 50, 250 50 C 270 60, 310 90, 330 110 L 350 250 L 320 250 L 300 150 L 290 450 L 110 450 L 100 150 L 80 250 L 50 250 L 70 110 C 90 90, 130 60, 150 50 Z" />
-                            <path class="sl_la_path sl_la_detail" d="M 170 50 C 170 80, 230 80, 230 50" />
-                            <path class="sl_la_path sl_la_detail" d="M 150 150 L 150 450" />
-                            <path class="sl_la_path sl_la_detail" d="M 250 150 L 250 450" />
-                            <path class="sl_la_path sl_la_detail" d="M 110 250 Q 200 270 290 250" />
-                            <g class="sl_la_node sl_la_node_shoulder"><circle cx="150" cy="50" r="5" /><line x1="150" y1="50" x2="100" y2="30" /><text x="95" y="25" text-anchor="end">Shoulder: 16"</text></g>
-                            <g class="sl_la_node sl_la_node_chest"><circle cx="290" cy="150" r="5" /><line x1="290" y1="150" x2="340" y2="130" /><text x="345" y="125" text-anchor="start">Chest: 38"</text></g>
-                            <g class="sl_la_node sl_la_node_waist"><circle cx="110" cy="250" r="5" /><line x1="110" y1="250" x2="60" y2="230" /><text x="55" y="225" text-anchor="end">Waist: 32"</text></g>
-                            <g class="sl_la_node sl_la_node_length"><circle cx="250" cy="450" r="5" /><line x1="250" y1="450" x2="300" y2="470" /><text x="305" y="475" text-anchor="start">Length: 42"</text></g>
+                            <!-- Tape measure coiled -->
+                            <path class="sl_la_path sl_la_main" d="M 200 120 C 270 120, 320 170, 320 240 C 320 310, 270 360, 200 360 C 130 360, 80 310, 80 240 C 80 170, 130 120, 200 120 Z" />
+                            <path class="sl_la_path sl_la_detail" d="M 200 155 C 255 155, 285 195, 285 240 C 285 285, 255 325, 200 325 C 145 325, 115 285, 115 240 C 115 195, 145 155, 200 155 Z" />
+                            <!-- Tick marks on tape -->
+                            <line class="sl_la_path sl_la_detail" x1="200" y1="120" x2="200" y2="105" />
+                            <line class="sl_la_path sl_la_detail" x1="253" y1="135" x2="261" y2="122" />
+                            <line class="sl_la_path sl_la_detail" x1="294" y1="174" x2="307" y2="166" />
+                            <line class="sl_la_path sl_la_detail" x1="320" y1="240" x2="337" y2="240" />
+                            <line class="sl_la_path sl_la_detail" x1="294" y1="306" x2="307" y2="314" />
+                            <!-- Ruler strip unrolling -->
+                            <path class="sl_la_path sl_la_main" d="M 320 240 L 360 200 L 370 210 L 330 250 Z" />
+                            <line class="sl_la_path sl_la_detail" x1="335" y1="218" x2="340" y2="213" />
+                            <line class="sl_la_path sl_la_detail" x1="345" y1="208" x2="350" y2="203" />
+                            <!-- Center cross-hair -->
+                            <line class="sl_la_path sl_la_detail" x1="200" y1="220" x2="200" y2="260" />
+                            <line class="sl_la_path sl_la_detail" x1="180" y1="240" x2="220" y2="240" />
+                            <g class="sl_la_node sl_la_node_shoulder"><circle cx="200" cy="120" r="5" /><line x1="200" y1="120" x2="150" y2="90" /><text x="145" y="85" text-anchor="end">Shoulder: 16"</text></g>
+                            <g class="sl_la_node sl_la_node_chest"><circle cx="320" cy="240" r="5" /><line x1="320" y1="240" x2="360" y2="260" /><text x="365" y="265" text-anchor="start">Chest: 38"</text></g>
+                            <g class="sl_la_node sl_la_node_waist"><circle cx="200" cy="360" r="5" /><line x1="200" y1="360" x2="150" y2="390" /><text x="145" y="395" text-anchor="end">Waist: 32"</text></g>
                         </svg>
                     </div>
                 </article>
 
-                <!-- Card 2: Salwar -->
+                <!-- Card 2: Cloth Processing -->
                 <article class="sl_process_card sl_card_2">
                     <div class="sl_card_info">
-                        <h3>02. Salwar Blueprint</h3>
-                        <p>Comfort and mobility are key. We map out the thigh, inseam, and ankle constraints for the perfect loose fit.</p>
+                        <h3>02. Precision Cloth Processing</h3>
+                        <p>Measurements alone are not enough. Our tailors process every cloth according to its unique weight and weave, ensuring the cut and stitch always match your exact body proportions.</p>
                     </div>
                     <div class="sl_card_image_wrapper sl_la_canvas">
-                        <svg class="sl_la_svg active" data-garment="salwar" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="sl_la_card_svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
                             <g class="sl_la_grid">
                                 <line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="300" x2="400" y2="300" /><line x1="0" y1="400" x2="400" y2="400" />
                                 <line x1="100" y1="0" x2="100" y2="500" /><line x1="200" y1="0" x2="200" y2="500" /><line x1="300" y1="0" x2="300" y2="500" />
                             </g>
-                            <path class="sl_la_path sl_la_main" d="M 120 100 L 280 100 L 290 140 C 310 250, 300 380, 270 450 L 230 450 C 220 350, 210 250, 200 200 C 190 250, 180 350, 170 450 L 130 450 C 100 380, 90 250, 110 140 Z" />
-                            <path class="sl_la_path sl_la_detail" d="M 110 140 L 290 140" />
-                            <path class="sl_la_path sl_la_detail" d="M 200 100 L 200 200" />
-                            <path class="sl_la_path sl_la_detail" d="M 180 80 Q 200 120 220 80" />
-                            <g class="sl_la_node sl_la_node_shoulder"><circle cx="280" cy="100" r="5" /><line x1="280" y1="100" x2="330" y2="80" /><text x="335" y="75" text-anchor="start">Waist: 34"</text></g>
-                            <g class="sl_la_node sl_la_node_chest"><circle cx="100" cy="200" r="5" /><line x1="100" y1="200" x2="50" y2="180" /><text x="45" y="175" text-anchor="end">Thigh: 24"</text></g>
-                            <g class="sl_la_node sl_la_node_waist"><circle cx="200" cy="300" r="5" /><line x1="200" y1="300" x2="250" y2="280" /><text x="255" y="275" text-anchor="start">Inseam: 28"</text></g>
-                            <g class="sl_la_node sl_la_node_length"><circle cx="150" cy="450" r="5" /><line x1="150" y1="450" x2="100" y2="470" /><text x="95" y="475" text-anchor="end">Bottom: 12"</text></g>
+                            <!-- Fabric bolt / roll -->
+                            <path class="sl_la_path sl_la_main" d="M 80 180 L 320 180 L 320 380 L 80 380 Z" />
+                            <!-- Fabric texture lines -->
+                            <line class="sl_la_path sl_la_detail" x1="80" y1="210" x2="320" y2="210" />
+                            <line class="sl_la_path sl_la_detail" x1="80" y1="240" x2="320" y2="240" />
+                            <line class="sl_la_path sl_la_detail" x1="80" y1="270" x2="320" y2="270" />
+                            <line class="sl_la_path sl_la_detail" x1="80" y1="300" x2="320" y2="300" />
+                            <line class="sl_la_path sl_la_detail" x1="80" y1="330" x2="320" y2="330" />
+                            <line class="sl_la_path sl_la_detail" x1="140" y1="180" x2="140" y2="380" />
+                            <line class="sl_la_path sl_la_detail" x1="200" y1="180" x2="200" y2="380" />
+                            <line class="sl_la_path sl_la_detail" x1="260" y1="180" x2="260" y2="380" />
+                            <!-- Scissors cutting diagonally -->
+                            <path class="sl_la_path sl_la_main" d="M 90 160 L 180 260" />
+                            <path class="sl_la_path sl_la_main" d="M 110 160 L 200 260" />
+                            <circle class="sl_la_path sl_la_main" cx="95" cy="148" r="14" />
+                            <circle class="sl_la_path sl_la_main" cx="113" cy="148" r="14" />
+                            <!-- Cutting guideline on fabric -->
+                            <path class="sl_la_path sl_la_detail" d="M 145 180 L 310 360" stroke-dasharray="8,5" />
+                            <g class="sl_la_node sl_la_node_chest"><circle cx="310" cy="180" r="5" /><line x1="310" y1="180" x2="355" y2="160" /><text x="360" y="155" text-anchor="start">Cut Line</text></g>
+                            <g class="sl_la_node sl_la_node_waist"><circle cx="200" cy="300" r="5" /><line x1="200" y1="300" x2="155" y2="320" /><text x="150" y="325" text-anchor="end">Weave: Linen</text></g>
+                            <g class="sl_la_node sl_la_node_length"><circle cx="320" cy="380" r="5" /><line x1="320" y1="380" x2="355" y2="400" /><text x="360" y="405" text-anchor="start">Seam: 1.5cm</text></g>
                         </svg>
                     </div>
                 </article>
 
-                <!-- Card 3: Blouse -->
+                <!-- Card 3: Digital Measurement -->
                 <article class="sl_process_card sl_card_3">
                     <div class="sl_card_info">
-                        <h3>03. Blouse Blueprint</h3>
-                        <p>Fitted tops require exacting precision. Neck depth, bust contour, and shoulder widths are flawlessly recorded.</p>
+                        <h3>03. Digitalized Measurement Collection</h3>
+                        <p>Say goodbye to paper slips. Every measurement is captured digitally on a tablet, stored in your profile, and instantly ready for any future order — no re-measuring needed.</p>
                     </div>
                     <div class="sl_card_image_wrapper sl_la_canvas">
-                        <svg class="sl_la_svg active" data-garment="blouse" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="sl_la_card_svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
                             <g class="sl_la_grid">
                                 <line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="300" x2="400" y2="300" /><line x1="0" y1="400" x2="400" y2="400" />
                                 <line x1="100" y1="0" x2="100" y2="500" /><line x1="200" y1="0" x2="200" y2="500" /><line x1="300" y1="0" x2="300" y2="500" />
                             </g>
-                            <path class="sl_la_path sl_la_main" d="M 130 80 C 180 80, 220 80, 270 80 L 320 140 L 300 180 L 280 160 L 270 280 L 130 280 L 120 160 L 100 180 L 80 140 Z" />
-                            <path class="sl_la_path sl_la_detail" d="M 160 80 C 160 160, 240 160, 240 80" />
-                            <path class="sl_la_path sl_la_detail" d="M 150 160 C 180 190, 220 190, 250 160" />
-                            <path class="sl_la_path sl_la_detail" d="M 130 280 L 130 250 C 200 230, 200 230, 270 250 L 270 280" />
-                            <g class="sl_la_node sl_la_node_shoulder"><circle cx="270" cy="80" r="5" /><line x1="270" y1="80" x2="320" y2="60" /><text x="325" y="55" text-anchor="start">Shoulder: 14"</text></g>
-                            <g class="sl_la_node sl_la_node_chest"><circle cx="160" cy="160" r="5" /><line x1="160" y1="160" x2="110" y2="130" /><text x="105" y="125" text-anchor="end">Neck Deep: 7"</text></g>
-                            <g class="sl_la_node sl_la_node_waist"><circle cx="280" cy="160" r="5" /><line x1="280" y1="160" x2="330" y2="180" /><text x="335" y="185" text-anchor="start">Bust: 36"</text></g>
-                            <g class="sl_la_node sl_la_node_length"><circle cx="130" cy="280" r="5" /><line x1="130" y1="280" x2="80" y2="300" /><text x="75" y="305" text-anchor="end">Waist: 30"</text></g>
+                            <!-- Tablet outline -->
+                            <rect class="sl_la_path sl_la_main" x="110" y="100" width="180" height="280" rx="14" />
+                            <rect class="sl_la_path sl_la_detail" x="125" y="120" width="150" height="220" rx="4" />
+                            <!-- Home button -->
+                            <circle class="sl_la_path sl_la_detail" cx="200" cy="360" r="8" />
+                            <!-- Screen content: form fields -->
+                            <line class="sl_la_path sl_la_detail" x1="140" y1="145" x2="260" y2="145" />
+                            <line class="sl_la_path sl_la_detail" x1="140" y1="165" x2="260" y2="165" />
+                            <line class="sl_la_path sl_la_detail" x1="140" y1="185" x2="220" y2="185" />
+                            <line class="sl_la_path sl_la_detail" x1="140" y1="205" x2="260" y2="205" />
+                            <line class="sl_la_path sl_la_detail" x1="140" y1="225" x2="230" y2="225" />
+                            <line class="sl_la_path sl_la_detail" x1="140" y1="245" x2="260" y2="245" />
+                            <!-- Checkmark / save icon -->
+                            <path class="sl_la_path sl_la_main" d="M 155 285 L 175 305 L 215 268" />
+                            <!-- Stylus -->
+                            <path class="sl_la_path sl_la_main" d="M 290 110 L 330 80 L 340 90 L 300 120 Z" />
+                            <line class="sl_la_path sl_la_detail" x1="290" y1="110" x2="285" y2="120" />
+                            <g class="sl_la_node sl_la_node_shoulder"><circle cx="260" cy="145" r="5" /><line x1="260" y1="145" x2="310" y2="125" /><text x="315" y="120" text-anchor="start">Shoulder: 16"</text></g>
+                            <g class="sl_la_node sl_la_node_chest"><circle cx="260" cy="205" r="5" /><line x1="260" y1="205" x2="310" y2="215" /><text x="315" y="220" text-anchor="start">Chest: 38"</text></g>
+                            <g class="sl_la_node sl_la_node_waist"><circle cx="200" cy="305" r="5" /><line x1="200" y1="305" x2="150" y2="330" /><text x="145" y="335" text-anchor="end">Saved ✓</text></g>
                         </svg>
                     </div>
                 </article>
 
-                <!-- Card 4: Nayra Cut -->
+                <!-- Card 4: Ironing -->
                 <article class="sl_process_card sl_card_4">
                     <div class="sl_card_info">
-                        <h3>04. Nayra Cut Blueprint</h3>
-                        <p>High slits and an elegant flare demand a unique structural map. We digitize every measurement to preserve the silhouette.</p>
+                        <h3>04. Proper Ironing &amp; Finishing</h3>
+                        <p>A perfectly stitched garment deserves a flawless finish. Every piece is carefully pressed and finished before delivery, so it arrives crisp, shaped, and ready to wear.</p>
                     </div>
                     <div class="sl_card_image_wrapper sl_la_canvas">
-                        <svg class="sl_la_svg active" data-garment="nayra" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="sl_la_card_svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
                             <g class="sl_la_grid">
                                 <line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="300" x2="400" y2="300" /><line x1="0" y1="400" x2="400" y2="400" />
                                 <line x1="100" y1="0" x2="100" y2="500" /><line x1="200" y1="0" x2="200" y2="500" /><line x1="300" y1="0" x2="300" y2="500" />
                             </g>
-                            <path class="sl_la_path sl_la_main" d="M 150 50 C 180 50, 220 50, 250 50 C 270 60, 290 80, 310 100 L 330 200 L 300 200 L 290 140 L 280 200 L 120 200 L 110 140 L 100 200 L 70 200 L 90 100 C 110 80, 130 60, 150 50 Z" />
-                            <path class="sl_la_path sl_la_main" d="M 120 200 L 90 480 L 180 480 L 195 200 M 205 200 L 220 480 L 310 480 L 280 200" />
-                            <path class="sl_la_path sl_la_detail" d="M 170 50 L 200 100 L 230 50" />
-                            <path class="sl_la_path sl_la_detail" d="M 120 200 Q 200 220 280 200" />
-                            <path class="sl_la_path sl_la_detail" d="M 90 480 Q 135 460 180 480" />
-                            <path class="sl_la_path sl_la_detail" d="M 220 480 Q 265 460 310 480" />
-                            <g class="sl_la_node sl_la_node_shoulder"><circle cx="310" cy="100" r="5" /><line x1="310" y1="100" x2="360" y2="80" /><text x="365" y="75" text-anchor="start">Armhole: 18"</text></g>
-                            <g class="sl_la_node sl_la_node_chest"><circle cx="120" cy="200" r="5" /><line x1="120" y1="200" x2="70" y2="180" /><text x="65" y="175" text-anchor="end">High Waist: 34"</text></g>
-                            <g class="sl_la_node sl_la_node_waist"><circle cx="200" cy="350" r="5" /><line x1="200" y1="350" x2="250" y2="330" /><text x="255" y="325" text-anchor="start">High Slit: 28"</text></g>
-                            <g class="sl_la_node sl_la_node_length"><circle cx="90" cy="480" r="5" /><line x1="90" y1="480" x2="40" y2="460" /><text x="35" y="455" text-anchor="end">Flare: 45"</text></g>
+                            <!-- Iron body -->
+                            <path class="sl_la_path sl_la_main" d="M 100 260 C 100 230, 130 210, 200 210 L 310 210 L 330 230 L 330 290 L 100 290 Z" />
+                            <!-- Iron sole plate detail -->
+                            <path class="sl_la_path sl_la_detail" d="M 110 280 L 320 280" />
+                            <!-- Steam holes -->
+                            <circle class="sl_la_path sl_la_detail" cx="160" cy="255" r="4" />
+                            <circle class="sl_la_path sl_la_detail" cx="200" cy="255" r="4" />
+                            <circle class="sl_la_path sl_la_detail" cx="240" cy="255" r="4" />
+                            <circle class="sl_la_path sl_la_detail" cx="180" cy="268" r="4" />
+                            <circle class="sl_la_path sl_la_detail" cx="220" cy="268" r="4" />
+                            <!-- Iron handle -->
+                            <path class="sl_la_path sl_la_main" d="M 200 210 L 200 175 C 200 160, 230 155, 250 165 L 270 175 L 270 210" />
+                            <!-- Steam puffs -->
+                            <path class="sl_la_path sl_la_detail" d="M 140 300 Q 130 315, 140 330 Q 150 345, 140 360" />
+                            <path class="sl_la_path sl_la_detail" d="M 180 300 Q 170 315, 180 330 Q 190 345, 180 360" />
+                            <path class="sl_la_path sl_la_detail" d="M 220 300 Q 210 315, 220 330 Q 230 345, 220 360" />
+                            <!-- Ironing board -->
+                            <path class="sl_la_path sl_la_main" d="M 60 310 L 340 310 L 360 320 L 60 320 Z" />
+                            <line class="sl_la_path sl_la_detail" x1="130" y1="320" x2="110" y2="420" />
+                            <line class="sl_la_path sl_la_detail" x1="270" y1="320" x2="290" y2="420" />
+                            <g class="sl_la_node sl_la_node_shoulder"><circle cx="330" cy="250" r="5" /><line x1="330" y1="250" x2="370" y2="235" /><text x="375" y="230" text-anchor="start">Temp: 180°C</text></g>
+                            <g class="sl_la_node sl_la_node_waist"><circle cx="140" cy="360" r="5" /><line x1="140" y1="360" x2="90" y2="375" /><text x="85" y="380" text-anchor="end">Steam: On</text></g>
+                        </svg>
+                    </div>
+                </article>
+
+                <!-- Card 5: On Time Delivery -->
+                <article class="sl_process_card sl_card_5">
+                    <div class="sl_card_info">
+                        <h3>05. On-Time Delivery</h3>
+                        <p>Your time matters. We track every order against its promised delivery date and manage our production schedule to ensure your outfit arrives exactly when expected — every time.</p>
+                    </div>
+                    <div class="sl_card_image_wrapper sl_la_canvas">
+                        <svg class="sl_la_card_svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <g class="sl_la_grid">
+                                <line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="300" x2="400" y2="300" /><line x1="0" y1="400" x2="400" y2="400" />
+                                <line x1="100" y1="0" x2="100" y2="500" /><line x1="200" y1="0" x2="200" y2="500" /><line x1="300" y1="0" x2="300" y2="500" />
+                            </g>
+                            <!-- Clock face -->
+                            <circle class="sl_la_path sl_la_main" cx="200" cy="210" r="110" />
+                            <circle class="sl_la_path sl_la_detail" cx="200" cy="210" r="100" />
+                            <!-- Hour markers -->
+                            <line class="sl_la_path sl_la_detail" x1="200" y1="115" x2="200" y2="130" />
+                            <line class="sl_la_path sl_la_detail" x1="293" y1="140" x2="285" y2="154" />
+                            <line class="sl_la_path sl_la_detail" x1="295" y1="210" x2="285" y2="210" />
+                            <line class="sl_la_path sl_la_detail" x1="293" y1="280" x2="285" y2="266" />
+                            <line class="sl_la_path sl_la_detail" x1="200" y1="305" x2="200" y2="290" />
+                            <line class="sl_la_path sl_la_detail" x1="107" y1="280" x2="115" y2="266" />
+                            <line class="sl_la_path sl_la_detail" x1="105" y1="210" x2="115" y2="210" />
+                            <line class="sl_la_path sl_la_detail" x1="107" y1="140" x2="115" y2="154" />
+                            <!-- Clock hands pointing to check time -->
+                            <line class="sl_la_path sl_la_main" x1="200" y1="210" x2="200" y2="140" />
+                            <line class="sl_la_path sl_la_main" x1="200" y1="210" x2="260" y2="210" />
+                            <circle class="sl_la_path sl_la_main" cx="200" cy="210" r="6" />
+                            <!-- Checkmark badge -->
+                            <circle class="sl_la_path sl_la_main" cx="290" cy="310" r="35" />
+                            <path class="sl_la_path sl_la_main" d="M 272 310 L 285 323 L 308 298" />
+                            <g class="sl_la_node sl_la_node_shoulder"><circle cx="200" cy="115" r="5" /><line x1="200" y1="115" x2="150" y2="90" /><text x="145" y="85" text-anchor="end">Deadline: Set</text></g>
+                            <g class="sl_la_node sl_la_node_chest"><circle cx="260" cy="210" r="5" /><line x1="260" y1="210" x2="310" y2="195" /><text x="315" y="190" text-anchor="start">On Schedule</text></g>
+                        </svg>
+                    </div>
+                </article>
+
+                <!-- Card 6: Customer Priority -->
+                <article class="sl_process_card sl_card_6">
+                    <div class="sl_card_info">
+                        <h3>06. Customer Priority First</h3>
+                        <p>Every decision we make starts with you. Your preferences, your timeline, and your satisfaction are the top priority at every stage — from measurement to delivery.</p>
+                    </div>
+                    <div class="sl_card_image_wrapper sl_la_canvas">
+                        <svg class="sl_la_card_svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <g class="sl_la_grid">
+                                <line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="300" x2="400" y2="300" /><line x1="0" y1="400" x2="400" y2="400" />
+                                <line x1="100" y1="0" x2="100" y2="500" /><line x1="200" y1="0" x2="200" y2="500" /><line x1="300" y1="0" x2="300" y2="500" />
+                            </g>
+                            <!-- Customer figure (head + body) -->
+                            <circle class="sl_la_path sl_la_main" cx="200" cy="160" r="45" />
+                            <path class="sl_la_path sl_la_main" d="M 130 280 C 130 240, 155 220, 200 220 C 245 220, 270 240, 270 280 L 270 340 L 130 340 Z" />
+                            <!-- Crown above head -->
+                            <path class="sl_la_path sl_la_main" d="M 160 105 L 160 80 L 180 95 L 200 70 L 220 95 L 240 80 L 240 105 Z" />
+                            <!-- Star badge on body -->
+                            <path class="sl_la_path sl_la_detail" d="M 200 255 L 207 275 L 228 275 L 212 287 L 218 308 L 200 296 L 182 308 L 188 287 L 172 275 L 193 275 Z" />
+                            <!-- Priority ribbon -->
+                            <path class="sl_la_path sl_la_main" d="M 80 360 L 320 360 L 320 390 L 200 380 L 80 390 Z" />
+                            <line class="sl_la_path sl_la_detail" x1="80" y1="370" x2="320" y2="370" />
+                            <g class="sl_la_node sl_la_node_shoulder"><circle cx="200" cy="70" r="5" /><line x1="200" y1="70" x2="150" y2="48" /><text x="145" y="43" text-anchor="end">Top Priority</text></g>
+                            <g class="sl_la_node sl_la_node_chest"><circle cx="270" cy="280" r="5" /><line x1="270" y1="280" x2="320" y2="265" /><text x="325" y="260" text-anchor="start">VIP Customer</text></g>
+                            <g class="sl_la_node sl_la_node_waist"><circle cx="200" cy="390" r="5" /><line x1="200" y1="390" x2="200" y2="415" /><text x="200" y="430" text-anchor="middle">Always First</text></g>
+                        </svg>
+                    </div>
+                </article>
+
+                <!-- Card 7: Active Customer Support -->
+                <article class="sl_process_card sl_card_7">
+                    <div class="sl_card_info">
+                        <h3>07. Active Customer Support</h3>
+                        <p>We are always here. Get real-time updates on your order, ask questions, request changes, and receive guidance at every step — without ever needing to visit the showroom.</p>
+                    </div>
+                    <div class="sl_card_image_wrapper sl_la_canvas">
+                        <svg class="sl_la_card_svg" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <g class="sl_la_grid">
+                                <line x1="0" y1="100" x2="400" y2="100" /><line x1="0" y1="200" x2="400" y2="200" /><line x1="0" y1="300" x2="400" y2="300" /><line x1="0" y1="400" x2="400" y2="400" />
+                                <line x1="100" y1="0" x2="100" y2="500" /><line x1="200" y1="0" x2="200" y2="500" /><line x1="300" y1="0" x2="300" y2="500" />
+                            </g>
+                            <!-- Main chat bubble (agent) -->
+                            <path class="sl_la_path sl_la_main" d="M 80 130 L 260 130 L 260 210 L 160 210 L 140 240 L 130 210 L 80 210 Z" />
+                            <!-- Chat lines inside bubble -->
+                            <line class="sl_la_path sl_la_detail" x1="105" y1="155" x2="235" y2="155" />
+                            <line class="sl_la_path sl_la_detail" x1="105" y1="173" x2="210" y2="173" />
+                            <line class="sl_la_path sl_la_detail" x1="105" y1="191" x2="225" y2="191" />
+                            <!-- Reply bubble (customer) -->
+                            <path class="sl_la_path sl_la_main" d="M 150 270 L 330 270 L 330 345 L 270 345 L 260 375 L 250 345 L 150 345 Z" />
+                            <line class="sl_la_path sl_la_detail" x1="175" y1="292" x2="305" y2="292" />
+                            <line class="sl_la_path sl_la_detail" x1="175" y1="310" x2="280" y2="310" />
+                            <!-- Live status dot -->
+                            <circle class="sl_la_path sl_la_main" cx="260" cy="130" r="14" />
+                            <circle class="sl_la_path sl_la_detail" cx="260" cy="130" r="7" />
+                            <g class="sl_la_node sl_la_node_shoulder"><circle cx="260" cy="210" r="5" /><line x1="260" y1="210" x2="310" y2="200" /><text x="315" y="195" text-anchor="start">Response: Live</text></g>
+                            <g class="sl_la_node sl_la_node_waist"><circle cx="150" cy="345" r="5" /><line x1="150" y1="345" x2="100" y2="365" /><text x="95" y="370" text-anchor="end">Support: 24/7</text></g>
                         </svg>
                     </div>
                 </article>

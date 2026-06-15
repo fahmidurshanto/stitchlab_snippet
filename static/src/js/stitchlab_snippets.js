@@ -154,43 +154,13 @@ function initLineArtAnimation(root = document) {
         });
     }, observerOptions);
 
-    // Setup for tabbed line art section
+    // Setup IntersectionObserver for tabbed line art sections
     root.querySelectorAll('.s_stitchlab_line_art').forEach((section) => {
         if (section.dataset.slLineArtReady) {
             return;
         }
         section.dataset.slLineArtReady = "1";
         observer.observe(section);
-
-        const tabs = section.querySelectorAll('.sl_la_tab');
-        const svgs = section.querySelectorAll('.sl_la_svg');
-        const canvas = section.querySelector('.sl_la_canvas');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const target = tab.dataset.target;
-                
-                tabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-
-                svgs.forEach(svg => {
-                    svg.style.display = 'none';
-                    svg.classList.remove('active');
-                });
-                
-                const activeSvg = section.querySelector(`.sl_la_svg[data-garment="${target}"]`);
-                if (activeSvg) {
-                    activeSvg.style.display = 'block';
-                    activeSvg.classList.add('active');
-                }
-
-                if (canvas) {
-                    canvas.classList.remove('is-visible');
-                    void canvas.offsetWidth; // Force reflow
-                    canvas.classList.add('is-visible');
-                }
-            });
-        });
     });
 
     // Setup for stacked line art cards
@@ -203,14 +173,71 @@ function initLineArtAnimation(root = document) {
     });
 }
 
+// Event delegation for line art tab clicks — works regardless of DOM timing
+document.addEventListener('click', (e) => {
+    const tab = e.target.closest('.sl_la_tab');
+    if (!tab) return;
+
+    const section = tab.closest('.s_stitchlab_line_art');
+    if (!section) return;
+
+    const target = tab.dataset.target;
+    const tabs = section.querySelectorAll('.sl_la_tab');
+    const svgs = section.querySelectorAll('.sl_la_svg');
+    const canvas = section.querySelector('.sl_la_canvas');
+
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+
+    svgs.forEach(svg => {
+        svg.style.display = 'none';
+        svg.classList.remove('active');
+    });
+
+    const activeSvg = section.querySelector(`.sl_la_svg[data-garment="${target}"]`);
+    if (activeSvg) {
+        activeSvg.style.display = 'block';
+        activeSvg.classList.add('active');
+    }
+
+    if (canvas) {
+        canvas.classList.remove('is-visible');
+        void canvas.offsetWidth; // Force reflow
+        canvas.classList.add('is-visible');
+    }
+});
+
 function initStitchLabSnippets(root = document) {
     initFeatureHubs(root);
     initReviewCarousels(root);
     initLineArtAnimation(root);
 }
 
-if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", () => initStitchLabSnippets());
-} else {
+// Robust initialization: try multiple strategies for Odoo's deferred rendering
+function bootStitchLab() {
     initStitchLabSnippets();
+
+    // Re-run when new snippet elements appear in the DOM
+    const mo = new MutationObserver((mutations) => {
+        for (const m of mutations) {
+            for (const node of m.addedNodes) {
+                if (node.nodeType === 1 && (
+                    node.matches && (
+                        node.matches('.s_stitchlab_features_hub, .s_stitchlab_reviews, .s_stitchlab_line_art, .s_stitchlab_line_art_cards') ||
+                        node.querySelector && node.querySelector('.s_stitchlab_features_hub, .s_stitchlab_reviews, .s_stitchlab_line_art, .s_stitchlab_line_art_cards')
+                    )
+                )) {
+                    initStitchLabSnippets();
+                    return;
+                }
+            }
+        }
+    });
+    mo.observe(document.body, { childList: true, subtree: true });
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", bootStitchLab);
+} else {
+    bootStitchLab();
 }
