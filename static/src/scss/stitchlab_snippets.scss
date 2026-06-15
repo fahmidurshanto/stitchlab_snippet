@@ -762,9 +762,12 @@
     }
 }
 
+.s_stitchlab_line_art {
+    overflow: hidden;
+}
+
 .s_stitchlab_line_art, .s_stitchlab_line_art_cards {
     padding: 80px 20px;
-    overflow: hidden;
     
     .sl_la_container {
         align-items: center;
@@ -956,6 +959,10 @@
         .sl_la_node_waist { animation-delay: 2.1s; }
         .sl_la_node_length { animation-delay: 2.4s; }
     }
+}
+
+.s_stitchlab_line_art_cards {
+    padding-bottom: 150px;
 }
 
 @media (max-width: 1100px) {
